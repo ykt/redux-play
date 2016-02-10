@@ -1,0 +1,10 @@
+[
+  {
+    "id": "home.welcome",
+    "defaultMessage": "Welcome to {page}"
+  },
+  {
+    "id": "home.today",
+    "defaultMessage": "\"Locale demo\" - Today's"
+  }
+]
