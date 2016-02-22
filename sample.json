@@ -1,0 +1,10 @@
+{
+  "current": "uuid",
+  "items": [
+    {
+      "text": "Hallo",
+      "uuid": "uuid",
+      "parent": "uuid"
+    }
+  ]
+}
