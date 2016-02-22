@@ -2,7 +2,7 @@
   "name": "mind-map",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha -t 4000 --require ./test/test-init --compilers js:babel-core/register ./src/**/*.spec.js",
+    "test": "NODE_ENV=test mocha -t 4000 --require ./test/test-init --compilers js:babel-core/register ./test/**/*.spec.js",
     "test:watch": "npm test -- -w",
     "test:cov": "NODE_ENV=test babel-node $(npm bin)/isparta cover --verbose --report text --report html --dir ./test/coverage $(npm bin)/_mocha -- --require ./test/test-init src/**/*.spec.js",
     "start": "babel-node devServer",
@@ -14,11 +14,14 @@
   "dependencies": {
     "fastclick": "1.0.6",
     "history": "2.0.0-rc2",
+    "immutable": "^3.7.6",
     "normalize.css": "3.0.3",
     "react": "0.14.6",
     "react-dom": "0.14.6",
     "react-intl": "2.0.0-beta-2",
-    "react-router": "2.0.0-rc5"
+    "react-redux": "^4.4.0",
+    "react-router": "2.0.0-rc5",
+    "redux": "^3.3.1"
   },
   "devDependencies": {
     "react-draggable": "3.7.1",
@@ -36,6 +39,7 @@
     "babel-preset-stage-0": "6.3.13",
     "babel-preset-stage-2": "6.3.13",
     "chai": "3.4.1",
+    "chai-immutable": "^1.5.3",
     "commitizen": "2.5.0",
     "copy-webpack-plugin": "1.0.0",
     "css-loader": "0.23.1",
@@ -62,6 +66,7 @@
     "react-transform-catch-errors": "1.0.1",
     "react-transform-hmr": "1.0.1",
     "redbox-react": "1.2.0",
+    "redux-devtools": "^3.1.1",
     "rimraf": "2.5.1",
     "serialize-javascript": "1.1.2",
     "sinon": "1.17.2",

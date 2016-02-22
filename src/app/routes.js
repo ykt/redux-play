@@ -1,13 +1,17 @@
 import React from 'react';
 import { Route } from 'react-router';
 
-import App from './App';
+import {reducer} from './reducer';
+
+
+import App from './components/App';
 import Home from './Home/Home';
+
+
 
 const routes = (
   <Route component={ App }>
-    <Route path="/" component={ Home }/>
-    // put other routes here...
+    <Route path="/" component={ GridTag } />
   </Route>
 );
 

@@ -1,6 +1,7 @@
 import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
+import chaiImmutable from 'chai-immutable'
 
 import { jsdom } from 'jsdom';
 global.document = jsdom('<!doctype html><html><body></body></html>');
@@ -9,6 +10,7 @@ global.navigator = global.window.navigator;
 global.HTMLElement = global.window.HTMLElement; // TODO: remove this once this PR is released https://goo.gl/nnyMUB
 
 chai.use(sinonChai);
+chai.use(chaiImmutable);
 
 global.expect = expect;
 global.sinon = sinon;

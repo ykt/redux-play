@@ -108,7 +108,7 @@ class Home extends React.Component {
   saveCallback = (data) => {
     console.log(this.state.nodes);
     const currentNode = this.findNode(this.state.current)[0];
-    let randomPosition = this.randomPosition(currentNode.child_position);
+    let randomPosition = this.nextLocation(currentNode.child_position);
     currentNode.child_position.push(randomPosition);
     const newNode = {
       text: data,
@@ -142,7 +142,7 @@ class Home extends React.Component {
     //</Button>
     //
     //{this.state.items.map((item, index) => {
-    //  let randomLocation = randomPosition(location);
+    //  let randomLocation = nextLocation(location);
     //  location.push(randomLocation)
     //  return <Child  key={index} title={item.title} index={randomLocation}/>
     //})}

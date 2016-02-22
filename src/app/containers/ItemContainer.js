@@ -18,11 +18,6 @@ let BoxItem = ({ dispatch }) => {
         input = node
       }}
       />
-      <Line
-        from={{x: 10, y: 20}}
-        to={{x: 10, y: 100}}
-        style="5px solid orange"
-      />
     </div>
   )
 };
